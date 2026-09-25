@@ -1,0 +1,1 @@
+Taruh file musik di folder ini, misalnya birthday-song.mp3, lalu isi DELUXE_CONFIG.music.src di script.js.

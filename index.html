@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#ff70af" />
+  <meta name="description" content="Midnight Kitty Deluxe Birthday Experience" />
+  <title>Midnight Kitty — Birthday Deluxe</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='34' r='23' fill='%230b0910'/%3E%3Cpath d='M14 20 18 5 29 18M50 20 46 5 35 18' fill='%230b0910'/%3E%3Cpath d='M19 14 20 10 24 16M45 14 44 10 40 16' fill='%23ff6fae'/%3E%3Ccircle cx='32' cy='37' r='3' fill='%23ff6fae'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+  <!-- CINEMATIC ENTRANCE GATE -->
+  <div class="entrance-overlay" id="entranceModal" role="dialog" aria-modal="true" aria-labelledby="entranceTitle">
+    <div class="entrance-stars" aria-hidden="true"></div>
+    <div class="entrance-card">
+      <div class="scanline" aria-hidden="true"></div>
+      <div class="entrance-badge">DELUXE BIRTHDAY TRANSMISSION</div>
+
+      <div class="scanner-wrap">
+        <div class="scanner-ring ring-a"></div>
+        <div class="scanner-ring ring-b"></div>
+        <div class="scanner-sweep"></div>
+        <div class="cat-art scanner-cat interactive-cat" data-cat-pose="peek" data-cat-size="compact" aria-label="Kucing hitam pink sedang mengintip"></div>
+        <span class="scanner-dot dot-1"></span>
+        <span class="scanner-dot dot-2"></span>
+        <span class="scanner-dot dot-3"></span>
+      </div>
+
+      <p class="eyebrow">incoming surprise detected</p>
+      <h1 id="entranceTitle">A tiny black cat is guarding<br><span>your birthday surprise.</span></h1>
+      <p class="entrance-copy" id="entranceCopy">Verifying the cutest person on this planet…</p>
+
+      <div class="verify-line">
+        <span id="verifyText">♡ scanning heart signature</span>
+        <strong id="verifyPercent">0%</strong>
+      </div>
+      <div class="verify-bar"><span id="verifyFill"></span></div>
+
+      <button class="primary-btn entrance-btn" id="enterSiteBtn" disabled>
+        <span class="btn-spark">✦</span>
+        <span id="enterBtnText">WAIT FOR THE KITTY…</span>
+        <span class="arrow">↗</span>
+      </button>
+      <p class="microcopy">Klik untuk membuka hadiah + menyalakan sound experience.</p>
+    </div>
+  </div>
+
+  <main id="mainApp" class="app-shell is-locked">
+    <!-- SECTION 1: HEADER + RUNNING TICKER -->
+    <section class="hero section" id="home">
+      <div class="ticker" aria-label="birthday news ticker">
+        <div class="ticker-label">MEOW NEWS</div>
+        <div class="ticker-viewport">
+          <div class="ticker-track">
+            <div class="ticker-content" id="tickerText">
+              BREAKING: hari ini si paling spesial naik level • birthday mode activated • black cat approves this relationship •
+            </div>
+            <div class="ticker-content" aria-hidden="true">
+              BREAKING: hari ini si paling spesial naik level • birthday mode activated • black cat approves this relationship •
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <nav class="topbar" aria-label="Navigasi">
+        <a class="brand" href="#home" aria-label="Midnight Kitty">
+          <span class="brand-cat">ฅ</span>
+          <span>MIDNIGHT KITTY</span>
+        </a>
+        <div class="nav-dots">
+          <a href="#letter" title="Surat"><span>01</span></a>
+          <a href="#wishes" title="Cat Wishes"><span>02</span></a>
+          <a href="#memories" title="Galeri"><span>03</span></a>
+          <a href="#game" title="Mini Game"><span>04</span></a>
+          <a href="#wish" title="Make a Wish"><span>05</span></a>
+        </div>
+        <button class="sound-toggle" id="soundToggle" aria-pressed="true">
+          <span class="sound-bars"><i></i><i></i><i></i></span>
+          <span id="soundLabel">Sound On</span>
+        </button>
+      </nav>
+
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <span class="pill">♡ LIMITED BIRTHDAY EDITION</span>
+          <h2>Happy Birthday,<br><span id="heroGirlName">Sayang</span><em>!</em></h2>
+          <p class="hero-lead" id="heroSubtitle">
+            Satu hari khusus buat manusia favoritku — ditemani seekor kucing hitam yang terlalu cool untuk mengaku kalau dia ikut senang.
+          </p>
+
+          <div class="hero-actions">
+            <a class="primary-btn" href="#letter">
+              Buka Hadiah
+              <span class="arrow">↓</span>
+            </a>
+            <button class="ghost-btn" id="secretBtn">psst… ada rahasia</button>
+          </div>
+
+          <div class="stat-row">
+            <div><strong>15</strong><span>memory slots</span></div>
+            <div><strong>09</strong><span>kitty messages</span></div>
+            <div><strong>01</strong><span>favorite person</span></div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="orbit orbit-a" aria-hidden="true"></div>
+          <div class="orbit orbit-b" aria-hidden="true"></div>
+          <div class="hero-sticker sticker-1">MINE ♡</div>
+          <div class="hero-sticker sticker-2">+1 LEVEL</div>
+
+          <figure class="kitty-card kitty-vector-card">
+            <div class="kitty-frame kitty-vector-frame">
+              <div class="cat-art hero-cat interactive-cat" data-cat-pose="sitting-heart" aria-label="Kucing hitam pink duduk sambil memeluk hati"></div>
+            </div>
+            <figcaption>
+              <span>official birthday guardian</span>
+              <strong>100% judgemental, 200% affectionate</strong>
+            </figcaption>
+          </figure>
+
+          <span class="floating-mark mark-1">✦</span>
+          <span class="floating-mark mark-2">♥</span>
+          <span class="floating-mark mark-3">✧</span>
+        </div>
+      </div>
+
+      <button class="scroll-cue" data-scroll="#letter">
+        <span>SCROLL TO UNLOCK THE STORY</span>
+        <i></i>
+      </button>
+    </section>
+
+    <!-- SECTION 2: SECRET NOTEBOOK / LETTER -->
+    <section class="section letter-section" id="letter">
+      <div class="section-heading">
+        <span class="kicker">01 — SECRET MEOW-MAIL</span>
+        <h2>A letter that only opens for <span>you.</span></h2>
+        <p>Bukan surat biasa. Kucing ini nyembunyiin pesan yang katanya terlalu manis buat dibaca sembarangan.</p>
+      </div>
+
+      <div class="letter-stage">
+        <div class="letter-decoration deco-star">✦</div>
+        <div class="cat-art section-cat letter-cat interactive-cat" data-cat-pose="loaf" aria-label="Kucing hitam pink sedang loaf"></div>
+        <div class="letter-decoration deco-heart">♥</div>
+
+        <button class="diary" id="diaryTrigger" aria-expanded="false">
+          <span class="diary-spine"></span>
+          <span class="diary-lock">♡</span>
+          <span class="diary-title">TOP SECRET<br><strong>FOR MY LOVE</strong></span>
+          <span class="diary-note">tap to unlock</span>
+        </button>
+
+        <article class="letter-paper" id="letterPaper" aria-hidden="true">
+          <button class="letter-close" id="letterClose" aria-label="Tutup surat">×</button>
+          <div class="paper-tape"></div>
+          <span class="paper-date" id="letterDate">FOR YOUR SPECIAL DAY</span>
+          <h3>Dear <span id="letterNickname">Sayang</span>,</h3>
+          <div class="letter-body" id="loveLetter"></div>
+          <p class="letter-signoff">Always yours,<br><strong id="letterSignoffName">Aku</strong> ♡</p>
+          <div class="paw-signature">ฅ ฅ ฅ</div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SECTION 3: 3x3 KITTY WISH GRID -->
+    <section class="section wishes-section" id="wishes">
+      <div class="section-heading section-heading-light">
+        <span class="kicker">02 — THE KITTY COUNCIL</span>
+        <h2>Nine tiny messages.<br><span>One big birthday mood.</span></h2>
+        <p>Klik satu per satu. Masing-masing punya ucapan dan bunyi kecilnya sendiri.</p>
+      </div>
+
+      <div class="cat-art section-cat wishes-peek-cat interactive-cat" data-cat-pose="peek-up" aria-label="Kucing hitam pink mengintip"></div>
+      <div class="wish-grid" id="castGrid"></div>
+
+      <dialog class="wish-dialog" id="wishDialog">
+        <button class="dialog-close" id="dialogClose" aria-label="Tutup">×</button>
+        <div class="dialog-avatar">
+          <div class="cat-art dialog-cat interactive-cat" id="dialogCat" data-cat-pose="waving" aria-hidden="true"></div>
+        </div>
+        <span class="dialog-label" id="dialogLabel">KITTY MESSAGE</span>
+        <h3 id="dialogName">Midnight</h3>
+        <p id="dialogQuote">Happy birthday!</p>
+        <button class="mini-btn" id="dialogNext">another meow →</button>
+      </dialog>
+    </section>
+
+    <!-- SECTION 4: SCRAPBOOK / GALLERY -->
+    <section class="section memories-section" id="memories">
+      <div class="section-heading">
+        <span class="kicker">03 — OUR LITTLE ARCHIVE</span>
+        <h2>Proof that ordinary days<br>can become <span>favorite memories.</span></h2>
+        <p>Ganti 14 foto di folder <code>assets/images</code> dengan kenangan kalian. Cover tetap punya slot tersendiri.</p>
+      </div>
+
+      <div class="cat-art section-cat memories-cat interactive-cat" data-cat-pose="sleeping" aria-label="Kucing hitam pink sedang tidur"></div>
+      <div class="scrapbook-grid" id="scrapbookGrid"></div>
+
+      <button class="memory-shuffle ghost-btn" id="shuffleMemories">acak polaroid ✦</button>
+
+      <dialog class="photo-dialog" id="photoDialog">
+        <button class="dialog-close" id="photoClose" aria-label="Tutup">×</button>
+        <img id="photoPreview" src="" alt="" />
+        <div class="photo-meta">
+          <span id="photoCount">MEMORY 01</span>
+          <p id="photoCaption">Caption</p>
+        </div>
+      </dialog>
+    </section>
+
+    <!-- SECTION 5: MINI-GAME -->
+    <section class="section game-section" id="game">
+      <div class="game-copy">
+        <span class="kicker">04 — MINI GAME</span>
+        <h2>Catch the <span>pink hearts</span><br>before the cat steals them.</h2>
+        <p>Klik / tap hati yang muncul. Kamu punya 20 detik. Kalau dapat 12+, bakal kebuka pesan bonus.</p>
+
+        <div class="game-scoreboard">
+          <div><span>score</span><strong id="gameScore">0</strong></div>
+          <div><span>time</span><strong id="gameTime">20</strong></div>
+          <div><span>best</span><strong id="gameBest">0</strong></div>
+        </div>
+
+        <button class="primary-btn" id="startGameBtn">START GAME <span class="arrow">↗</span></button>
+        <p class="game-result" id="gameResult" aria-live="polite"></p>
+      </div>
+
+      <div class="game-machine">
+        <div class="machine-top">
+          <span>HEART CATCHER 2005</span>
+          <i></i><i></i><i></i>
+        </div>
+        <div class="game-arena" id="gameArena">
+          <div class="arena-grid" aria-hidden="true"></div>
+          <div class="cat-art arena-cat interactive-cat" data-cat-pose="peek-side" aria-label="Kucing hitam pink mengintip mini game"></div>
+          <div class="game-ready" id="gameReady">
+            <span>♡</span>
+            <strong>READY?</strong>
+            <small>tap START GAME</small>
+          </div>
+        </div>
+        <div class="machine-bottom">
+          <span>NO HEARTS WERE HARMED IN THIS GAME</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: MAKE A WISH / CAKE -->
+    <section class="section wish-section" id="wish">
+      <div class="wish-sky" aria-hidden="true"></div>
+      <div class="cat-art section-cat cake-cat interactive-cat" data-cat-pose="party" aria-label="Kucing hitam pink memakai topi pesta"></div>
+
+      <div class="section-heading section-heading-center section-heading-light">
+        <span class="kicker">05 — FINAL SURPRISE</span>
+        <h2>Okay, birthday girl.<br><span>Make a wish.</span></h2>
+        <p>Jangan bilang wish-nya. Kucingnya kepo.</p>
+      </div>
+
+      <div class="wish-input-card">
+        <label for="wishInput">tulis wish rahasia di sini</label>
+        <div class="wish-input-row">
+          <input id="wishInput" type="text" maxlength="80" placeholder="I wish…" autocomplete="off" />
+          <button id="sealWishBtn" aria-label="Simpan wish">seal ♡</button>
+        </div>
+        <small>Wish ini hanya tersimpan di browser kamu.</small>
+      </div>
+
+      <div class="cake-stage">
+        <div class="celebration-sparkles" aria-hidden="true">
+          <span class="spark spark-star s1">✦</span>
+          <span class="spark spark-heart s2">♥</span>
+          <span class="spark spark-dot s3"></span>
+          <span class="spark spark-star s4">✧</span>
+          <span class="spark spark-heart s5">♡</span>
+          <span class="spark spark-dot s6"></span>
+          <span class="spark spark-star s7">✦</span>
+          <span class="spark spark-heart s8">♥</span>
+          <span class="spark spark-dot s9"></span>
+          <span class="spark spark-star s10">✧</span>
+          <span class="spark spark-heart s11">♡</span>
+          <span class="spark spark-dot s12"></span>
+        </div>
+
+        <!-- Candles deliberately sit BEHIND the cake frosting/body -->
+        <div class="candles" id="candles" aria-label="Lima lilin ulang tahun">
+          <div class="candle"><span class="flame"></span><span class="wick"></span></div>
+          <div class="candle"><span class="flame"></span><span class="wick"></span></div>
+          <div class="candle"><span class="flame"></span><span class="wick"></span></div>
+          <div class="candle"><span class="flame"></span><span class="wick"></span></div>
+          <div class="candle"><span class="flame"></span><span class="wick"></span></div>
+        </div>
+
+        <div class="birthday-cake" aria-label="Kue ulang tahun pink">
+          <div class="cake-frosting">
+            <div class="cake-sprinkles" aria-hidden="true">
+              <i class="spr sp1"></i><i class="spr sp2"></i><i class="spr sp3"></i><i class="spr sp4"></i>
+              <i class="spr sp5"></i><i class="spr sp6"></i><i class="spr sp7"></i><i class="spr sp8"></i>
+              <i class="spr sp9"></i><i class="spr sp10"></i><i class="spr sp11"></i><i class="spr sp12"></i>
+              <i class="spr sp13"></i><i class="spr sp14"></i><i class="spr sp15"></i><i class="spr sp16"></i>
+            </div>
+          </div>
+          <div class="cake-body">
+            <span class="cake-message">HAPPY BIRTHDAY</span>
+            <strong id="cakeName">SAYANG ♡</strong>
+          </div>
+          <div class="cake-shadow"></div>
+        </div>
+
+        <div class="cake-plate"></div>
+        <div class="smoke-layer" id="smokeLayer" aria-hidden="true"></div>
+      </div>
+
+      <button class="primary-btn blow-btn" id="blowCandlesBtn">
+        TIUP LILINNYA
+        <span class="arrow">♡</span>
+      </button>
+
+      <div class="final-card" id="finalCard" aria-hidden="true">
+        <span class="final-stamp">WISH SENT TO THE UNIVERSE ✦</span>
+        <h3 id="finalHeadline">Happy Birthday!</h3>
+        <p id="finalMessage">Semoga tahun ini lebih lembut, seru, dan penuh hal baik buat kamu.</p>
+        <button class="ghost-btn" id="replayBtn">replay the magic ↺</button>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span>made with too much pink & one suspicious black cat</span>
+      <span id="footerNames">♡</span>
+    </footer>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <div class="confetti-layer" id="confettiLayer" aria-hidden="true"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

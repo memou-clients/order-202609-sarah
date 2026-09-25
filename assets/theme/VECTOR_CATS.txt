@@ -1,0 +1,3 @@
+Karakter kucing pada template ini dibuat sebagai inline SVG/DOM oleh script.js.
+Tidak ada gambar raster kucing yang dipakai pada tampilan website.
+Edit fungsi catSVG() dan catFace() untuk mengubah bentuk/pose.

@@ -1,0 +1,175 @@
+{
+  "templateKey": "birthday.deluxe.midnight_kitty",
+  "name": "Midnight Kitty Birthday Deluxe",
+  "package": "Deluxe",
+  "version": "1.3.0",
+  "maxPhotos": 15,
+  "photoSlots": [
+    {
+      "key": "cover",
+      "label": "Hero Cover",
+      "path": "assets/images/cover.jpg",
+      "required": true
+    },
+    {
+      "key": "photo_1",
+      "label": "Memory 1",
+      "path": "assets/images/photo_1.jpg",
+      "required": false
+    },
+    {
+      "key": "photo_2",
+      "label": "Memory 2",
+      "path": "assets/images/photo_2.jpg",
+      "required": false
+    },
+    {
+      "key": "photo_3",
+      "label": "Memory 3",
+      "path": "assets/images/photo_3.jpg",
+      "required": false
+    },
+    {
+      "key": "photo_4",
+      "label": "Memory 4",
+      "path": "assets/images/photo_4.jpg",
+      "required": false
+    },
+    {
+      "key": "photo_5",
+      "label": "Memory 5",
+      "path": "assets/images/photo_5.jpg",
+      "required": false
+    },
+    {
+      "key": "photo_6",
+      "label": "Memory 6",
+      "path": "assets/images/photo_6.jpg",
+      "required": false
+    },
+    {
+      "key": "photo_7",
+      "label": "Memory 7",
+      "path": "assets/images/photo_7.jpg",
+      "required": false
+    },
+    {
+      "key": "photo_8",
+      "label": "Memory 8",
+      "path": "assets/images/photo_8.jpg",
+      "required": false
+    },
+    {
+      "key": "photo_9",
+      "label": "Memory 9",
+      "path": "assets/images/photo_9.jpg",
+      "required": false
+    },
+    {
+      "key": "photo_10",
+      "label": "Memory 10",
+      "path": "assets/images/photo_10.jpg",
+      "required": false
+    },
+    {
+      "key": "photo_11",
+      "label": "Memory 11",
+      "path": "assets/images/photo_11.jpg",
+      "required": false
+    },
+    {
+      "key": "photo_12",
+      "label": "Memory 12",
+      "path": "assets/images/photo_12.jpg",
+      "required": false
+    },
+    {
+      "key": "photo_13",
+      "label": "Memory 13",
+      "path": "assets/images/photo_13.jpg",
+      "required": false
+    },
+    {
+      "key": "photo_14",
+      "label": "Memory 14",
+      "path": "assets/images/photo_14.jpg",
+      "required": false
+    }
+  ],
+  "fields": [
+    {
+      "key": "girlfriendName",
+      "type": "text",
+      "label": "Nama Penerima",
+      "required": true
+    },
+    {
+      "key": "nickname",
+      "type": "text",
+      "label": "Panggilan",
+      "required": false
+    },
+    {
+      "key": "boyfriendName",
+      "type": "text",
+      "label": "Nama Pengirim",
+      "required": true
+    },
+    {
+      "key": "birthdayDate",
+      "type": "date",
+      "label": "Tanggal Ulang Tahun",
+      "required": true
+    },
+    {
+      "key": "heroSubtitle",
+      "type": "textarea",
+      "label": "Subtitle Hero",
+      "required": false
+    },
+    {
+      "key": "loveLetter",
+      "type": "textarea[]",
+      "label": "Paragraf Surat",
+      "required": true
+    },
+    {
+      "key": "music.src",
+      "type": "audio",
+      "label": "Background Music",
+      "required": false
+    },
+    {
+      "key": "castDialogues",
+      "type": "object",
+      "label": "9 Dialog Kitty",
+      "required": true
+    }
+  ],
+  "features": {
+    "cinematicEntrance": true,
+    "characterDialogues": 9,
+    "miniGame": true,
+    "cakeCandles": 5,
+    "confetti": true,
+    "webAudioSynth": true,
+    "responsive": true,
+    "vectorCats": true,
+    "catPoses": 10,
+    "pointerTouchCatInteraction": true,
+    "tickerClippedViewport": true,
+    "photoFramesThemeFree": true,
+    "compactHeroNoTopGap": true,
+    "finalCardCollapsedUntilBlow": true,
+    "simplePinkCake": true,
+    "candlesBehindCake": true,
+    "cakeSprinkles": true,
+    "cakeSparklesAndHearts": true,
+    "cleanBorderlessCakeDrips": true,
+    "sectionStoryMode": true,
+    "desktopWheelChapterNavigation": true,
+    "mobileScrollSnap": true,
+    "chapterProgressPager": true,
+    "sectionEntranceAnimations": true
+  }
+}
