@@ -4,7 +4,7 @@
    ============================================================ */
 const DELUXE_CONFIG = {
   "girlfriendName": "Sarah",
-  "nickname": "Sayang",
+  "nickname": "Sipaling Cantik",
   "boyfriendName": "Your Favorite Human",
   "birthdayDate": "24 September 2026",
   "heroSubtitle": "Satu hari khusus buat manusia favoritku — ditemani seekor kucing hitam yang terlalu cool untuk mengaku kalau dia ikut senang.",
