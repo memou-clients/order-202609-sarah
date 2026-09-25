@@ -3,84 +3,79 @@
    USER CUSTOMIZATION CONFIG
    ============================================================ */
 const DELUXE_CONFIG = {
-  girlfriendName: "My Sweet Queen",
-  nickname: "Sayang",
-  boyfriendName: "Your Favorite Human",
-  birthdayDate: "24 September 2026",
-  heroSubtitle:
-    "Satu hari khusus buat manusia favoritku — ditemani seekor kucing hitam yang terlalu cool untuk mengaku kalau dia ikut senang.",
-  ticker:
-    "BREAKING: hari ini si paling spesial naik level • birthday mode activated • black cat approves this relationship • semoga harimu manis banget •",
-  loveLetter: [
+  "girlfriendName": "Sarah",
+  "nickname": "Sayang",
+  "boyfriendName": "Your Favorite Human",
+  "birthdayDate": "24 September 2026",
+  "heroSubtitle": "Satu hari khusus buat manusia favoritku — ditemani seekor kucing hitam yang terlalu cool untuk mengaku kalau dia ikut senang.",
+  "ticker": "BREAKING: hari ini si paling spesial naik level • birthday mode activated • black cat approves this relationship • semoga harimu manis banget •",
+  "loveLetter": [
     "Selamat ulang tahun untuk orang yang bisa bikin hari biasa terasa punya cerita.",
     "Aku harap di umur yang baru ini kamu lebih sering ketemu hal-hal yang bikin hati kamu ringan: tawa yang tulus, orang-orang yang hangat, mimpi yang pelan-pelan jadi nyata, dan banyak alasan untuk bangga sama diri sendiri.",
     "Terima kasih sudah jadi kamu — dengan semua tingkah lucu, random, manis, dan sedikit ngeselinnya. Semoga website kecil ini bisa jadi satu dari banyak hal yang bikin kamu senyum hari ini."
   ],
-  finalMessage:
-    "Semoga tahun ini lebih lembut, seru, dan penuh hal baik buat kamu. Aku harap satu-satu wish kamu menemukan jalannya.",
-  music: {
-    src: "", // contoh: "assets/audio/birthday-song.mp3"
-    volume: 0.30
+  "finalMessage": "Semoga tahun ini lebih lembut, seru, dan penuh hal baik buat kamu. Aku harap satu-satu wish kamu menemukan jalannya.",
+  "music": {
+    "src": "",
+    "volume": 0.3
   },
-
-  castDialogues: {
-    midnight: {
-      name: "Midnight",
-      role: "Chief Birthday Inspector",
-      quote: "Aku sudah cek semuanya. Kesimpulannya: kamu terlalu spesial buat ulang tahun yang biasa.",
-      sound: "meow"
+  "castDialogues": {
+    "midnight": {
+      "name": "Midnight",
+      "role": "Chief Birthday Inspector",
+      "quote": "Aku sudah cek semuanya. Kesimpulannya: kamu terlalu spesial buat ulang tahun yang biasa.",
+      "sound": "meow"
     },
-    mochi: {
-      name: "Mochi",
-      role: "Soft Department",
-      quote: "Semoga tahun ini hidup kamu selembut bantal paling empuk dan sehangat pelukan favorit.",
-      sound: "bloop"
+    "mochi": {
+      "name": "Mochi",
+      "role": "Soft Department",
+      "quote": "Semoga tahun ini hidup kamu selembut bantal paling empuk dan sehangat pelukan favorit.",
+      "sound": "bloop"
     },
-    nova: {
-      name: "Nova",
-      role: "Star Collector",
-      quote: "Kalau satu bintang mewakili satu doa baik buat kamu, langit malam ini bakal penuh banget.",
-      sound: "sparkle"
+    "nova": {
+      "name": "Nova",
+      "role": "Star Collector",
+      "quote": "Kalau satu bintang mewakili satu doa baik buat kamu, langit malam ini bakal penuh banget.",
+      "sound": "sparkle"
     },
-    pepper: {
-      name: "Pepper",
-      role: "Chaos Manager",
-      quote: "Aturan ulang tahun nomor satu: dessert dulu. Masalah hidup belakangan.",
-      sound: "pop"
+    "pepper": {
+      "name": "Pepper",
+      "role": "Chaos Manager",
+      "quote": "Aturan ulang tahun nomor satu: dessert dulu. Masalah hidup belakangan.",
+      "sound": "pop"
     },
-    luna: {
-      name: "Luna",
-      role: "Wish Keeper",
-      quote: "Simpan satu wish paling rahasia. Aku janji nggak ngintip… mungkin.",
-      sound: "chime"
+    "luna": {
+      "name": "Luna",
+      "role": "Wish Keeper",
+      "quote": "Simpan satu wish paling rahasia. Aku janji nggak ngintip… mungkin.",
+      "sound": "chime"
     },
-    pixel: {
-      name: "Pixel",
-      role: "Memory Archivist",
-      quote: "Foto boleh blur, tapi alasan kenapa momen itu berharga biasanya tetap tajam.",
-      sound: "click"
+    "pixel": {
+      "name": "Pixel",
+      "role": "Memory Archivist",
+      "quote": "Foto boleh blur, tapi alasan kenapa momen itu berharga biasanya tetap tajam.",
+      "sound": "click"
     },
-    kiri: {
-      name: "Kiri",
-      role: "Professional Napper",
-      quote: "Semoga kamu punya cukup waktu buat ngejar mimpi dan cukup waktu juga buat rebahan tanpa rasa bersalah.",
-      sound: "purr"
+    "kiri": {
+      "name": "Kiri",
+      "role": "Professional Napper",
+      "quote": "Semoga kamu punya cukup waktu buat ngejar mimpi dan cukup waktu juga buat rebahan tanpa rasa bersalah.",
+      "sound": "purr"
     },
-    mimi: {
-      name: "Mimi",
-      role: "Pink Energy Specialist",
-      quote: "Hari ini kamu wajib bersinar. Besok juga boleh. Sebenarnya tiap hari juga boleh.",
-      sound: "bubble"
+    "mimi": {
+      "name": "Mimi",
+      "role": "Pink Energy Specialist",
+      "quote": "Hari ini kamu wajib bersinar. Besok juga boleh. Sebenarnya tiap hari juga boleh.",
+      "sound": "bubble"
     },
-    noir: {
-      name: "Noir",
-      role: "Final Approval",
-      quote: "Aku jarang bilang ini, tapi… happy birthday. Kamu resmi dapat stempel: loved a lot.",
-      sound: "stamp"
+    "noir": {
+      "name": "Noir",
+      "role": "Final Approval",
+      "quote": "Aku jarang bilang ini, tapi… happy birthday. Kamu resmi dapat stempel: loved a lot.",
+      "sound": "stamp"
     }
   },
-
-  memories: [
+  "memories": [
     "The beginning of a thousand little stories.",
     "A day I would replay without skipping.",
     "You looked happy here. I love that.",
